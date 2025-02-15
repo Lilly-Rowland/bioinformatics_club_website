@@ -1,85 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bioinformatics Club @ RIT</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: hsl(127, 16%, 89%);
-            background-color: #101310;
-        }
 
-        header {
-            background-color: #004d00;
-            color: hsl(127, 16%, 89%);
-            text-align: center;
-            padding: 20px;
-        }
+<title>Bioinformatics Club @ RIT</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
-        .banner {
-            background-image: url('bi_banner.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-        }
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
 
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .content p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .resources {
-            background-color: #043a04;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .resources a {
-            display: block;
-            color: #8bb78b;
-            font-size: 1rem;
-            margin: 10px 0;
-            text-decoration: none;
-        }
-
-        .resources a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <h1>Bioinformatics Club</h1>
-    </header>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
-    <div class="banner"></div>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
 
-    <div class="content">
-        <p>We’re a community of students passionate about exploring the intersection of biology and computing. Our club hosts workshops to help members develop valuable bioinformatics skills. Our events not only focus on skill-building but also provide valuable networking opportunities with alumni and fellow peers. Beyond academics, we hope to be able to allow connections between students in the program. We look forward to seeing you at our events! </p>
+	<div class="sk-rotating-plane"></div>
+
+</div>
+
+
+<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">
+				<img src="../images/logo_black.png" alt="Logo" style="height: 30px; display: inline-block; vertical-align: middle;">
+				Bioinformatics Club
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#intro" class="smoothScroll">Home</a></li>
+				<li><a href="#about" class="smoothScroll">About</a></li>
+				<li><a href="#events" class="smoothScroll">Events</a></li>
+				<li><a href="#resources" class="smoothScroll">Resources</a></li>
+				<li><a href="#community" class="smoothScroll">Contact</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- =========================
+    INTRO SECTION   
+============================== -->
+<section id="intro" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">Welcome to</h3>
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Bioinformatics Club</h1>
+				<h3 class="wow fadeInUp" data-wow-delay="1.9s">at Rochester Institute of Technology</h3>
+				<!-- <a href="Lilly_Resume.pdf" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">Resume</a>
+				<a href="www.linkedin.com/in/lilly-rowland-6b986b286" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">LinkedIn</a> -->
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+<!-- About -->
+<section id="about" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+				<img src="images/logo_transparent.png" class="img-responsive profile" alt="logo">
+			</div>
+			
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+				<h2>What do we do?</h>
+				<p>We are a community of students passionate about the intersection of biology 
+					and computing. Through hands-on workshops, we help members develop 
+					bioinformatics skills like using GitHub and working with computational 
+					clusters. Our events also provide networking opportunities with alumni 
+					and highlight campus resources. Beyond academics, we foster a supportive 
+					environment through social activities.</p>
+				<p><strong>Everyone is welcome—we look forward 
+					to seeing you at our events!</strong></p>
+			</div>	
+		</div>
+	</div>
+</section>
+
+<hr style="border: 1px solid #F4FFF8; width: 80%; margin: 0 auto;">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- What are we? -->
+ 
+<section id="whatarewe" class="parallax-section">
+	
+		<div class="row">
+			<div class="wow fadeInDown text-center" data-wow-delay="0.4s"><h2>What are bioinformatics and computational biology?</h2></div>
+			<br>
+			<div class="wow fadeInUp col-md-6 col-sm-6 text-center" data-wow-delay="0.9s">
+				<img src="images/overview.png" class="img-responsive profile" alt="logo" style="display: inline-block;">
+				<!-- <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+				<model-viewer alt="3D View of ChimeraX spike2.glb file" src="images/spike2.glb" style="width: 600px; height: 400px" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer> -->
+				<p style="text-align:center">Bioinformatics requires skills in many different disciplines.</p>
+				<img src="dna_banner.png" class="img-responsive" alt="logo" style="display: inline-block; margin-left: 15px;">
+			</div>
+			<div class="container">
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+				<p>Bioinformatics develops computational tools to analyze biological data, while computational biology applies models and simulations to 
+					study biological systems. Both fields integrate computer science, statistics, and biology to explore complex biological questions.</p>
+				<p><strong>Applications</strong>
+				<ul>
+					<li><strong>Genomics & Proteomics: </strong>Analyzing DNA, RNA, and protein sequences</li>
+					<li><strong>Drug Discovery: </strong>Identifying potential drug targets</li>
+					<li><strong>Epidemiology: </strong>Tracking disease outbreaksn</li>
+					<li><strong>Agricultural Science: </strong>Enhancing crop resilience and plant genetics</li>
+					<li><strong>Structural Biology: </strong>Simulating protein folding and molecular interactions</li>
+					<li><strong>Predictive Modeling: </strong>Training ML models to classify diseases based on genetic data</li>
+					<li><strong>Multi-Omics Data Integration: </strong>Combining omics data for comprehensive analysis</li>
+					<li><strong><a href="https://bioinformaticshome.com/bioinformatics_tutorials/Applications%20of%20bioinformatics.html" target="_blank">And so much more!</a></strong></li>
+				</ul>
+				</p>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    Goals SECTION   
+============================== -->
+<section id="goals" class="parallax-section">
+	<h1>Our Goals</h1>
+	<div class="container">
+		<div class="row">
+			<div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
+				<i class="fa fa-laptop-code"></i>
+				<h3>Skill Building</h3>
+				<p> We host workshops on topics like GitHub, command line, and cheminformatics. We also provide 
+					resources for students to learn independently and collaborate on bioinformatics projects
+				</p>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+				<i class="fa fa-handshake"></i>
+				<h3>Networking</h3>
+				<p>Students have the opportunity to connect with professors and alumni.
+					We host alumni nights to learn from and connect with past bioinformatics students and work with faculty to
+					learn more about their research.
+				</p>
+			</div>
+
+			<div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+				<i class="fa fa-heart-o"></i>
+				<h3>Support and Outreach</h3>
+				<p>We foster a supportive community through social events to grow the community of bioinformatics
+					students at RIT. We aim to provide students with opportunities to collaborate and build friendships 
+					with peers who share similar interests.
+				</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+    Events Section   
+============================== -->
+<section id="events">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 info">
+				<h3>Past and Upcoming Meetings</h3>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Event</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1/23/25</td>
+							<td>Welcome meeting + GitHub</td>
+						</tr>
+						<tr>
+							<td>2/6/25</td>
+							<td>Alumni Night</td>
+						</tr>
+						<tr>
+							<td>2/20/25</td>
+							<td>Command line crash course</td>
+						</tr>
+						<tr>
+							<td>2/27/25</td>
+							<td>Perl Workshop with Dr. Rodriguez</td>
+						</tr>
+						<tr>
+							<td>2/28/25</td>
+							<td>Club bonding: Bowling Night at 6:30PM</td>
+						</tr>
+						<tr>
+							<td>3/6/25</td>
+							<td>Cheminformatics with Dr. Craig</td>
+						</tr>
+						<tr>
+							<td>3/20/25</td>
+							<td>Thank you card night + TBD</td>
+						</tr>
+						<tr>
+							<td>4/3/25</td>
+							<td>Molecular Dynamics Workshop with Dr. Brini</td>
+						</tr>
+						<tr>
+							<td>4/17/25</td>
+							<td>TBD</td>
+						</tr>
+						<tr>
+							<td>4/17/25</td>
+							<td>Pizza Night!</td>
+						</tr>
+						<tr>
+							<td>4/26/25</td>
+							<td>Imagine RIT: Check out our exhibit!</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>We will also have club bonding events! Keep up to date on the Discord to join. 
+					Bowling is coming up soon!
+				</p>
+				<img src="images/bi1.jpg" alt="binary dna" style="width: 100%; height: 100%;">
+			</div>
+			<div class="col-sm-6 col-md-6 info">
+				<h3>General Meetings: Thursdays @ 7PM</h3>
+				<iframe style="margin-top: 30px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSeF3Rrn03-gp0Kc-lX0pllax4Lccx5XY5WX-JrNcXmLGhBU21LeGBXUgIrS1HkXOGxgeQ7nuxvckGj/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600px"></iframe>
+			</div>
+		</div>
+</section>
+
+<!-- =========================
+    Resources SECTION   
+============================== -->
+
+<section id="resources" class="parallax-section">
+	<br>
+	<h1>Our Resources</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6" id="resource-list">
+				
+				<li><a href="https://drive.google.com/drive/folders/1y2_9hh5vWQ69-ww4rAqrExVaChNVVNu-?usp=sharing" target="_blank">Spring Presentations</a></li>
+				<li><a href="https://rit.zoom.us/rec/share/uXr7606i0VQcxcr9i-wiz8xBbvkbUREp4NqD4h_dDD4dLlUH2MNvGYMFjELSEHiD.a93m4w7QRUASrDht?startTime=1738886005000" target="_blank">Alumni Night Zoom</a></li>
+				<li><a href="https://docs.google.com/document/d/1L1i4CQyk5ucBuwOb2ox2B2Abjm0yPetoKoNC_CzGBd4/edit?usp=sharing" target="_blank">Bioinformatics Professors</a></li>
+				<li><a href="https://people.rit.edu/gtfsbi/Symp/bioinformatics.htm" target="_blank">Co-op & Internship Opportunities (not updated regularly)</a></li>
+				<!-- <li><a href="https://example.com/resource5" target="_blank">Resource 5</a></li> -->
+
+			</div>
+			<div class="col-md-6 col-sm-6"></div>
+				<img style="margin-top: 50px; margin-bottom: 50px; height: 300px" src="images/rit.png" class="img-responsive" alt="Image of RIT campus">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    EBOARD SECTION   
+============================== -->
+<section id="eboard" class="parallax-section">
+	<br>
+	<div class="container">
+        <div class="row text-center">
+            <div class="wow fadeInDown" data-wow-delay="0.4s">
+                <h2>E-Board</h2>
+            </div>
+        </div>
+		<br>
+		<br>
+        <!-- First row (3 people) -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/serena.png" class="img-responsive profile" alt="Person 1">
+                <h3>Serena Tuytschaevers</h3><h5>(she/her)</h5>
+                <h4>President</h4>
+                <p>Bioinformatics BS/MS</p>
+                <p>Fun fact: I was adopted from China!</p>
+                <a href="https://www.linkedin.com/in/serena-tuytschaevers/" class="fa-brands fa-linkedin"></a>
+                <a href="mailto:sjt3532@g.rit.edu" class="fa fa-envelope"></a>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/mayah.jpg" class="img-responsive profile" alt="Person 3">
+                <h3>Mayah Phillips</h3><h5>(she/her)</h5>
+                <h4>Vice President</h4>
+                <p>Bioinformatics BS | Mathematics Immersion</p>
+                <p>Fun fact: I am a professional frog masseuse, but I also am a toad chiropractor.</p>
+                <a href="https://www.linkedin.com/in/mayah-phillips-036a04271/" class="fa-brands fa-linkedin"></a>
+                <a href="mailto:map1474@g.rit.edu" class="fa fa-envelope"></a>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/sam.jpg" class="img-responsive profile" alt="Person 2">
+                <h3>Samuel Kopelev</h3><h5>(he/him)</h5>
+                <h4>Treasurer</h4>
+                <p>Bioinformatics BS | Applied Statistics Immersion</p>
+                <p>Fun fact: I've been to 20+ countries!</p>
+                <a href="https://www.linkedin.com/in/samuelkopelev/" class="fa-brands fa-linkedin"></a>
+                <a href="mailto:slk1379@rit.edu" class="fa fa-envelope"></a>
+            </div>
+        </div>
+		<br>
+		<br>
+        <!-- Second row (3 people) -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/nikhi.jpg" class="img-responsive profile" alt="Person 4">
+                <h3>Nikhi Boggavarapu</h3><h5>pronouns</h5>
+                <h4>Secretary</h4>
+                <p>Bioinformatics BS/MS | Biotechnology BS</p>
+                <p>Fun fact: I have accidentally killed 76 goldfish :(</p>
+                <a href="https://www.linkedin.com/in/nikhi-boggavarapu-7a549825b/" class="fa-brands fa-linkedin"></a>
+                <a href="mailto:nb6672@g.rit.edu" class="fa fa-envelope"></a>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/lilly.jpg" class="img-responsive profile" alt="Person 5">
+                <h3>Lilly Rowland</h3><h5>(she/her)</h5>
+                <h4>Event Manager</h4>
+                <p>Fun fact: I have over 200 pairs of novelty socks!</p>
+                <p>Major: Bioinformatics BS/MS | Computer Science BS | Mathematics Minor</p>
+                <a href="https://www.linkedin.com/in/lilly-rowland/" class="fa-brands fa-linkedin"></a>
+                <a href="mailto:lgr4641@rit.edu" class="fa fa-envelope"></a>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/diya.webp" class="img-responsive profile" alt="Person 6">
+                <h3>Diya Mathai</h3><h5>pronouns</h5>
+                <h4>Masters' Student Diplomat</h4>
+                <p>Bioinformatics BS/MS</p>
+                <p>Fun fact: I have $900 worth of Nerds gummy clusters in my pockets at all times.</p>
+                <a href="https://www.linkedin.com/in/diya-mathai-07a339310/" class="fa-brands fa-linkedin"></a>
+                <a href="mailto:dtm3426@g.rit.edu" class="fa fa-envelope"></a>
+            </div>
+        </div>
+		<br>
+		<br>
+        <!-- Last row (1 person centered) -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 col-sm-6 text-center">
+                <img src="images/profile_pics/schulze.jpg" class="img-responsive profile" alt="Person 7">
+                <h3>Stefan Schulze</h3><h5>(he/him)</h5>
+                <h4>Advisor</h4>
+                <p>Assistant Professor</p>
+                <a href="mailto:sxssbi1@rit.edu" class="fa fa-envelope"></a>
+            </div>
+			
+        </div>
+		<br>
     </div>
+	
+</section>
+
+<!-- =========================
+    Resources SECTION   
+============================== -->
+
+<section id="contact" class="parallax-section">
+	<br>
+	<h1>Reach out here</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<form id="contact-form" method="post" action="send_email.php">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message:</label>
+						<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Send</button>
+				</form>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h3>Connect with us</h3>
+				<p>You can also reach us here! Let us know about any questions, comments, or concerns you have :)</p>
+				<p><strong>Email: </strong><a href="mailto:sjt3532@g.rit.edu">bioinformaticsclub@rit.edu</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+    FOOTER SECTION   
+============================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp" data-wow-delay="0.6s">Bioinformatics Club @ RIT | College of Science</p>
+
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-angle-up" data-wow-delay="1s"></a></li>
+					<li><a href=mailto:“sjt3532@g.rit.edu” class="fa fa-envelope wow fadeInUp" data-wow-delay="1.5s"></a></li>
+				</ul>
+
+			</div>
+			
+		</div>
+	</div>
+</footer>
 
 
-    <div class="resources">
-        <h2>Resources</h2>
-        <a href="https://docs.google.com/spreadsheets/d/1eCSK_4WST4SK5f_BPNOcrpGtYpuxqNq3QGVh0Zy1Ngk/edit?usp=sharing">Link to Calendar</a>
-        <a href="#">Link to Discord</a>
-        <a href="mailto:sjt3532@g.rit.edu">sjt3532@g.rit.edu</a>
-        <a href="https://drive.google.com/drive/folders/1y2_9hh5vWQ69-ww4rAqrExVaChNVVNu-?usp=sharing">Link to Slides</a>
-    </div>
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="js/jquery.js"></script>
+<script src="js/doggy.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
